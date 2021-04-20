@@ -51,7 +51,7 @@ header {
   width: 5rem;
 }
 
-.nav-list {
+.navigation {
   display: flex;
   list-style: none;
 }
