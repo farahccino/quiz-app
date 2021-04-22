@@ -1,11 +1,19 @@
 .navigation {
+  height: 4rem;
 }
 
 .navigation__container {
   bottom: 0;
   display: flex;
+  justify-content: center;
   list-style: none;
   position: sticky;
+}
+
+.navigation__item img {
+  margin-bottom: 0;
+  height: 45px;
+  width: 45px;
 }
 
 .navigation__item:hover {
@@ -14,10 +22,18 @@
 }
 
 .navigation__item--active a {
-  border: 3px solid hsl(133, 8%, 53%);
-  border-radius: 3rem;
+  xborder: 3px solid hsl(133, 8%, 53%);
+  xborder-radius: 3rem;
   xfont-weight: 800;
   padding: 2.1rem 0.5rem 0.3rem;
+}
+
+.navigation__item--inactive a {
+  opacity: 0.5;
+}
+
+.navigation__item--inactive:hover a {
+  opacity: 1;
 }
 
 .navigation__image {

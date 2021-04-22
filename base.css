@@ -7,25 +7,32 @@ hsl(60, 9%, 69%) light
 hsl(133, 8%, 53%) medium
 hsl(170, 12%, 39%) dark
 
+hsl(337, 79%, 65%) violet red (dark pink)
+hsl(337, 82%, 74%) tickle me pink (medium pink)
+hsl(214, 100%, 97%) alice blue (bg) (light purple)
+hsl(246, 50%, 62%) (medium purple)
+hsl(245, 33%, 30%) space cadet (dark purple)
+
 
 */
 
 * {
   box-sizing: border-box;
+  margin-left: 0;
 }
 
 body {
   line-height: 1.5;
   margin: 0;
-  background-color: ivory;
-  font-family: "Helvetica";
+  background-color: hsl(214, 100%, 97%);
+  font-family: "roboto";
 }
 
 footer {
   display: flex;
   justify-content: center;
-  border-top: 3px solid hsl(10, 16%, 78%);
-  background-color: hsl(23, 16%, 84%);
+  border-top: 3px solid hsl(337, 79%, 65%);
+  background-color: hsl(337, 82%, 74%);
   bottom: 0;
   position: sticky;
 }
@@ -33,24 +40,27 @@ footer {
 button-logout {
   display: flex;
 }
+
+button-logout:hover {
+  background-color: hsl(337, 82%, 74%);
+}
+
+p {
+  margin: 15px 10px;
+}
+
 .formular {
   display: flex;
   flex-direction: column;
 }
 .header {
   display: flex;
-  background-color: hsl(133, 8%, 53%);
+  background-color: hsl(246, 50%, 62%);
   padding: 5px;
   display: flex;
   text-align: center;
   justify-content: center;
-  border-bottom: 3px solid hsl(170, 12%, 39%);
-}
-
-.list {
-  border: solid 2px hsl(10, 16%, 78%);
-  border-radius: 30%;
-  padding: 4px;
+  border-bottom: 3px solid hsl(245, 33%, 30%);
 }
 
 .profile__box {
@@ -68,8 +78,4 @@ button-logout {
   display: flex;
   list-style: none;
   justify-content: space-around;
-}
-
-p {
-  margin: 15px 10px;
 }
