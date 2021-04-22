@@ -1,0 +1,43 @@
+.card {
+  background-color: hsl(133, 8%, 53%);
+  border-bottom: 3px solid hsl(170, 12%, 39%);
+  text-align: center;
+  margin: 3rem;
+  padding: 1rem;
+  position: relative;
+  box-shadow: rgba(1, 46, 27, 0.94) 0px 3px 8px;
+}
+
+.card__bookmark {
+  position: absolute;
+  width: 3.5rem;
+  right: 30px;
+  top: -1rem;
+  xmargin-bottom: -2.2rem;
+}
+
+.card__bookmark:hover {
+  transform: scale(1.25);
+  transition: 1s ease;
+}
+
+.card__tags {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+x.spoiler_button {
+  background-color: bisque;
+}
+
+.spoiler_button:hover {
+  font-weight: bold;
+  xcolor: white;
+  box-shadow: 5px 5px 5px black;
+}
+
+.spoiler_button:active {
+  font-weight: bold;
+  box-shadow: none;
+}

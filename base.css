@@ -1,9 +1,14 @@
-@import "./base.css";
-
-@import "./components/cards.css";
-@import "./components/navigation.css";
-
 /*
+color palette
+
+hsl(23, 16%, 84%) pale pink
+hsl(10, 16%, 78%) shadow pink
+hsl(60, 9%, 69%) light
+hsl(133, 8%, 53%) medium
+hsl(170, 12%, 39%) dark
+
+
+*/
 
 * {
   box-sizing: border-box;
@@ -19,8 +24,10 @@ body {
 footer {
   display: flex;
   justify-content: center;
-  border-top: 3px solid lavender;
-  background-color: lavenderblush;
+  border-top: 3px solid hsl(10, 16%, 78%);
+  background-color: hsl(23, 16%, 84%);
+  bottom: 0;
+  position: sticky;
 }
 
 button-logout {
@@ -32,16 +39,16 @@ button-logout {
 }
 .header {
   display: flex;
-  background-color: rgb(127, 187, 159);
+  background-color: hsl(133, 8%, 53%);
   padding: 5px;
   display: flex;
   text-align: center;
   justify-content: center;
-  border-bottom: 3px solid rgb(2, 80, 44);
+  border-bottom: 3px solid hsl(170, 12%, 39%);
 }
 
 .list {
-  border: solid 1px lavenderblush;
+  border: solid 2px hsl(10, 16%, 78%);
   border-radius: 30%;
   padding: 4px;
 }
@@ -66,4 +73,3 @@ button-logout {
 p {
   margin: 15px 10px;
 }
-*/

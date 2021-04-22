@@ -1,0 +1,25 @@
+.navigation {
+}
+
+.navigation__container {
+  bottom: 0;
+  display: flex;
+  list-style: none;
+  position: sticky;
+}
+
+.navigation__item:hover {
+  transform: scale(1.25);
+  transition: 1s ease;
+}
+
+.navigation__item--active a {
+  border: 3px solid hsl(133, 8%, 53%);
+  border-radius: 3rem;
+  xfont-weight: 800;
+  padding: 2.1rem 0.5rem 0.3rem;
+}
+
+.navigation__image {
+  width: 2.5rem;
+}
