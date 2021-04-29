@@ -1,13 +1,18 @@
 .navigation {
   height: 4rem;
+  display: flex;
+  align-items: center;
 }
 
 .navigation__container {
   bottom: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
   position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .navigation__item img {

@@ -1,11 +1,16 @@
 .card {
   background-color: hsl(246, 50%, 62%);
   border-bottom: 3px solid hsl(245, 33%, 30%);
+  border-radius: 5%;
   text-align: center;
   margin: 3rem;
   padding: 1rem;
   position: relative;
   box-shadow: hsla(246, 40%, 10%, 0.94) 0px 3px 8px;
+}
+
+.card__answer {
+  color: black;
 }
 
 .card__bookmark {
@@ -23,33 +28,38 @@
   opacity: 1;
 }
 
+.card__button {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 100vw;
+  color: ivory;
+  padding: 0.4rem;
+}
+
+.card__button:hover {
+  cursor: pointer;
+  background-color: ivory;
+  color: hsl(245, 33%, 30%);
+}
+
 .card__tags {
   display: flex;
   list-style: none;
   justify-content: center;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .list {
   border: solid 2px hsl(214, 100%, 97%);
-  border-radius: 30%;
+  border-radius: 100vw;
+  xcolor: ivory;
   padding: 4px;
   font-size: 0.8rem;
 }
 
-x.spoiler_button {
-  background-color: bisque;
-}
-
-x.spoiler_button:hover {
-  font-weight: bold;
-  xcolor: white;
-  box-shadow: 5px 5px 5px black;
-}
-
-x.spoiler_button:active {
-  font-weight: bold;
-  box-shadow: none;
-}
-
-ul.card__tags {
+ul {
+  padding-left: 0;
 }

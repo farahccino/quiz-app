@@ -10,7 +10,7 @@
   <body>
     <header class="header"><h1 class="title center">Art Quiz</h1></header>
     <main>
-      <article class="card mb-2">
+      <article class="card">
         <img
           class="card__bookmark"
           src="images/Bookmark.png"
@@ -18,14 +18,8 @@
         />
         <h2>Question 1</h2>
         <p>Vincent van Gogh belonged to which art movement?</p>
-        <!--<button name="spoiler_button" class="spoiler_button" type="button">
-          Show Answer
-        </button>
-        <div class="spoiler_text">Answer</div>-->
-        <details>
-          <summary>view answer</summary>
-          <p>Post-Impressionism</p>
-        </details>
+        <button class="card__button">Show answer</button>
+        <p class="card__answer hidden">Post-Impressionism</p>
         <ul class="card__tags">
           <li class="list item1">Surrealism</li>
           <li class="list item2">Futurism</li>
@@ -33,7 +27,7 @@
           <li class="list item4">Neoclassicism</li>
         </ul>
       </article>
-      <article class="card mb-2">
+      <article class="card">
         <img
           class="card__bookmark"
           src="images/Bookmark.png"
@@ -41,10 +35,10 @@
         />
         <h2>Question 2</h2>
         <p>Which artist is known to paint dancers?</p>
-        <details open>
-          <summary>view answer</summary>
-          <p>Edgar Degas</p>
-        </details>
+
+        <button class="card__button">Show answer</button>
+        <p class="card__answer hidden">Edgar Degas</p>
+
         <ul class="card__tags">
           <li class="list item5">Willem van Haecht</li>
           <li class="list item6">Edgar Degas</li>
@@ -52,7 +46,7 @@
           <li class="list item8">Louise Abbéma</li>
         </ul>
       </article>
-      <article class="card mb-2">
+      <article class="card">
         <img
           class="card__bookmark"
           src="images/Bookmark.png"
@@ -62,10 +56,9 @@
         <p>
           Who is the favorite artist of the famous web developer Farah Mansour?
         </p>
-        <details>
-          <summary>view answer</summary>
-          <p>Lawrence Alma-Tadema</p>
-        </details>
+        <button class="card__button">Show answer</button>
+        <p class="card__answer hidden">Lawrence Alma-Tadema</p>
+
         <ul class="card__tags">
           <li class="list item9">Gerard van Honthorst</li>
           <li class="list item10">Evelyn de Morgan</li>
@@ -100,5 +93,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

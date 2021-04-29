@@ -58,6 +58,7 @@ p {
   background-color: hsl(246, 50%, 62%);
   padding: 5px;
   display: flex;
+  position: sticky;
   text-align: center;
   justify-content: center;
   border-bottom: 3px solid hsl(245, 33%, 30%);
